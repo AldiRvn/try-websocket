@@ -40,7 +40,7 @@ func BindToJsonServer(ws *websocket.Conn) {
 
 // This example demonstrates a trivial echo server.
 func main() {
-	// ? Fixing 403: https://stackoverflow.com/questions/19708330/serving-a-websocket-in-go
+	// ? Fixing 403: https://stackoverflow.com/a/23324279
 	// wsServer := websocket.Server{Handler: websocket.Handler(EchoServer)}
 	// wsServer := websocket.Server{Handler: websocket.Handler(CountingServer)}
 	wsServer := websocket.Server{Handler: websocket.Handler(BindToJsonServer)}
